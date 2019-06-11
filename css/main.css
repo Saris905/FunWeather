@@ -1,0 +1,695 @@
+/* Спецификации */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+ul {
+    padding: 0px;
+}
+
+/* Первый экран */
+
+header {
+    background: url("../img/main-bg.jpg") no-repeat center top / cover;
+    padding-top: 34px;
+    padding-bottom: 65px;
+}
+
+
+.logo {
+    color: #ffffff;
+    padding-top: 1px;
+}
+
+.menu {
+    list-style: none;
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__item a {
+    color: #c9d1e7;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.menu__item a:hover {
+    color: #ffffff;
+
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.social a:not(:nth-child(3)) {
+    margin-right: 34px;
+}
+
+.main__title {
+    color: #ffffff;
+    margin-top: 205px;
+    font-size: 60px;
+    line-height: 1.25em;
+    width: 485px;
+}
+
+.main__text {
+    color: #ffffff;
+    margin-top: 33px;
+    width: 400px;
+    font-weight: 300;
+    line-height: 1.7em;
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 51px;
+    color: #ffffff;
+    width: 157px;
+    height: 52px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-download {
+    background: #fc6a42;
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background: #e2613d;
+
+}
+
+.btn-features {
+    background: #4466c9;
+    margin-left: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-features:hover {
+    background: #3a5bb8;
+}
+
+.scroll {
+    margin-top: 250px; /* написать в css */
+    display: flex;
+    justify-content: center;
+}
+
+.circle-red {
+    margin: 425px 0 0 44px;
+
+}
+
+.circle-white {
+    margin:210px 0 0 15px ;
+}
+
+.circle-navy {
+    margin: 127px 0 0 38px;
+
+}
+
+.circle-yellow {
+    margin: 215px 0 0 30px;
+
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    margin-top: 128px;
+}
+
+.features {
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 115px;
+}
+
+.features__title {
+    font-size: 36px;
+    color: #648cff;
+    text-transform: uppercase;
+
+}
+
+.features__text {
+    font-size: 18px;
+    color: #999999;
+    margin-top: 18px;
+}
+
+.feature__item {
+
+}
+
+.feature__block {
+    margin-left: 18px;
+}
+
+
+.feature__title {
+    font-size: 24px;
+    color: #353854;
+
+}
+
+.feature__text {
+    font-size: 16px;
+    color: #999999;
+    line-height: 2em;
+    margin-top: 9px;
+}
+
+/* Слайдер и его секция*/
+
+.carousel {
+    width:750px;
+    height: 300px;
+    position: relative;
+    margin: 200px auto;
+}
+.carousel img {
+    overflow: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
+    box-shadow: 0px 30px 50px 0px #dedede;
+}
+
+.widgets {
+    text-align: center;
+    margin-top: 175px;
+}
+/* 3я секция Screenshots */
+
+.screenshots__title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+.screenshots__block_r {
+    margin-left: 60px;
+    margin-top: 120px;
+}
+.screenshots__block_dr {
+    margin-left: 80px;
+    margin-top: 340px;
+}
+
+.screenshots__block_l {
+    margin-top: 300px;
+
+}
+
+.screenshot__left { /* Позиционирование скринов*/
+    margin-left: 10px;
+}
+.screenshot__rainy {
+    margin-top: 270px;
+}
+
+.screenshot__right { /* Позиционирование скринов*/
+    margin-top: 182px;
+    margin-left: 10px;
+}
+
+.scrn__icon {
+
+}
+
+.scrn__title {
+    font-size: 36px;
+    color: #648cff;
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+
+.scrn__text_r {
+    font-size: 24px;
+    color: #353854;
+    margin-top: 25px;
+    width: 485px;
+
+}
+
+.scrn__text_l {
+    font-size: 24px;
+    color: #353854;
+    margin-top: 25px;
+    width: 470px;
+
+}
+
+.scrn__degrees {
+    margin-top: 45px;
+}
+
+/* 4я секция Отзывы */
+
+.reviews {
+    text-align: center;
+    margin-top: 115px;
+    margin-bottom: 75px;
+}
+
+.quote__block_up {
+    margin-top: 60px;
+}
+
+.quote__block_down {
+    margin-top: 210px;
+    margin-bottom: 180px;
+}
+
+.commas {
+    font-size: 141px;
+    color: #648cff;
+    line-height: 0em;
+}
+
+.commas__down {
+    transform: rotate(180deg);
+}
+
+.quote {
+    font-size: 24px;
+    line-height: 36px;
+    color: #353854;
+    font-weight: 300;
+}
+
+.quote__author {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 0em;
+    color: #686a7f;
+}
+
+/* Блок загрузки приложения */
+
+.section__download {
+    background: url("../img/download/download-bg.png") no-repeat center top / cover;
+
+}
+
+.download__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 110px;
+}
+
+.download__text {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 30px;
+    font-weight: 300;
+    width: 410px;
+}
+
+.download__btn {
+    margin-top: 47px;
+    margin-bottom: 105px;
+}
+
+.download__btn a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer  {
+
+}
+
+.footer {
+    background: url("../img/footer/footer-bg.png") no-repeat center top / cover;
+    position: relative;
+}
+
+.logo__footer {
+    color: #fc6a42;
+    padding-top: 99px;
+}
+
+.logo__footer span {
+    color: #648cff;
+}
+
+.menu__footer {
+    list-style: none;
+    margin-top: 101px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.menu__footer a {
+    color: #9596ab;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.menu__footer a:hover {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social__footer {
+    margin-top: 98px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social__footer a:not(:nth-child(3)) {
+    margin-right: 34px;
+}
+
+.copyright {
+    color: #50547d;
+    font-size: 16px;
+    margin-top: 125px;
+    margin-bottom: 80px;
+}
+
+.arrow {
+    position: absolute;
+    right: 65px;
+    bottom: 0px;
+}
+
+.carousel__cont {
+    margin: 0 auto;
+}
+
+/* Медиа-запросы */
+
+@media screen and (max-width: 991px) {
+    .logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .social {
+        justify-content: center;
+        margin-top: 40px;
+
+
+    }
+
+    .menu__item a {
+        font-size: 20px;
+    }
+
+    .main__title {
+        text-align: center;
+        margin: 0  auto;
+        margin-top: 40px;
+    }
+
+    .main__text {
+        text-align: center;
+        margin: 0  auto;
+        margin-top: 30px;
+    }
+
+    .btn-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .circle-red {
+       display: none;
+
+    }
+
+    .circle-white {
+        display: none;
+    }
+
+    .circle-navy {
+        display: none;
+
+    }
+
+    .circle-yellow {
+        display: none;
+
+    }
+    .scroll {
+        display: block;
+        margin-left: 320px;
+        margin-top: 800px;
+    }
+
+    .phone {
+        display: flex;
+        justify-content: center;
+        margin-top: 128px;
+        margin-left: 220px;
+    }
+
+    .features {
+        margin-bottom: 50px;
+    }
+
+    .feature__item {
+        margin-top: 40px;
+    }
+
+    .features__text {
+        margin-top: 40px;
+    }
+
+    .carousel {
+        width:700px;
+        height: 300px;
+        position: relative;
+        margin: 150px auto;
+    }
+    .screenshot__left {
+        margin-left: 75px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .screenshot__rainy {
+        margin-top: 80px;
+    }
+
+    .screenshot__right {
+        display: none;
+    }
+
+    .screenshots__block_l {
+        display: none;
+    }
+
+    .screenshots__block_r {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .screenshots__block_dr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+        margin-right: 66px;
+    }
+
+    .quote__block_up {
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+
+    .quote__block_down {
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
+
+    .logo__footer {
+        text-align: center;
+    }
+
+    .social__footer {
+        margin-top: 160px;
+        justify-content: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .carousel__cont {
+        margin: 50px -20px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .scroll {
+        display: block;
+        margin-left: 230px;
+        margin-top: 800px;
+    }
+
+    .phone {
+        display: flex;
+        justify-content: center;
+        margin-top: 128px;
+        margin-left: 165px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .menu__item {
+        display: block;
+        margin-top: 60px;
+
+    }
+
+    .menu__item a {
+        font-size: 24px;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .social {
+
+        justify-content: space-around;
+        margin-top: 80px;
+    }
+
+    .main__title {
+
+        margin-top: 70px;
+    }
+
+    .carousel {
+        max-width: 600px;
+        max-height: 300px;
+
+        margin: 150px auto;
+    }
+    .carousel__cont {
+        margin: 100px -105px;
+
+    }
+
+    .menu__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .menu__item a {
+        font-size: 32px;
+    }
+
+    .menu__item {
+
+        margin-top: 70px;
+
+    }
+
+    .main__title {
+        font-size: 50px;
+    }
+
+    .carousel__cont {
+        margin: 50px -90px;
+    }
+
+    .scrn__text_r {
+        width: auto;
+    }
+
+    .scrn__text_l {
+        width: auto;
+    }
+
+    .btn-block {
+        justify-content: space-around;
+    }
+
+    .main__title {
+        width: auto;
+    }
+
+    .main__text {
+        width: auto;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 488px) {
+
+    .widgets {
+        display: none;
+    }
+
+    .carousel__cont {
+        display: none;
+    }
+
+    .phone {
+        width: 110px;
+        margin: 50px 50px;
+    }
+
+    .scroll {
+        margin-left: 150px;
+    }
+
+}
+
+@media screen and (max-width: 328px) {
+
+    .phone {
+        width: 50px;
+        margin: 50px 70px;
+    }
+
+    .scroll {
+        margin-left: 130px;
+    }
+}
